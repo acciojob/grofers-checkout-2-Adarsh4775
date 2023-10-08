@@ -1,55 +1,38 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-
-	<style>
-		  table {
-        border-collapse: collapse; /* Merge border lines for a cleaner look */
-        width: 100%; /* Ensure the table expands to the full width of its container */
-        border: 2px solid black; /* Set the border around the entire table */
-    }
-
-    tr, td {
-        border: 1px solid black; /* Set the border for table header cells and table data cells */
-        padding: 8px; /* Add some padding to the cells for spacing */
-        text-align: center; /* Center-align text within cells */
-    }
-	</style>
+    <title>Grocery List</title>
 </head>
-
 <body>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td data-ns-test="prices">2.50</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td data-ns-test="prices">1.20</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td data-ns-test="prices">3.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td data-ns-test="grandTotal"></td>
+            </tr>
+        </tfoot>
+    </table>
 
-	<table >
-      <tr>
-		  <td>Fruits</td>
-		 <td>Price</td>
-	  </tr>
-		<tr>
-			<td>Apple</td>
-			<td id="data-ns-prices" >10</td>
-		</tr>
-			<tr>
-			<td>Banana</td>
-			<td id="data-ns-prices" >12</td>
-		</tr>
-			<tr>
-			<td>Orange</td>
-			<td id="data-ns-prices" >15</td>
-		</tr>
-		<tr>
-			<td>PineApple</td>
-			<td id="data-ns-prices" >25</td>
-		</tr>
-
-		
-	</table>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
