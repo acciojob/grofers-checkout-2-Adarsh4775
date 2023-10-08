@@ -1,5 +1,5 @@
 //your code here
-let priceElement = document.querySelectorAll("data-ns-prices");
+let priceElement = document.querySelectorAll(".data-ns-prices");
 let totalPrice = 0;
 
 priceElement.forEach((priceElement)=>{
@@ -13,7 +13,7 @@ let newCell = document.createElement("td");
 newCell.textContent= `Total: $${totalPrice.toFixed(2)}`;
 
 newRow.appendChild(newCell);
-let table = document.getElementsByTagname("table");
+let table = document.getElementsByTagName("table")[0];
 table.appendChild(newRow);
 
-caluculateTotalPrice();
+
