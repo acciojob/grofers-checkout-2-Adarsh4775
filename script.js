@@ -13,8 +13,8 @@ const newCell = document.createElement("td");
 	newCell.setAttribute("data-ns-test","grandTotal")
     newRow.appendChild(newCell);
 
-	const table = document.querySelector("table");
-	table.appendChild(newRow);
+	const tablebody = document.querySelector("tbody");
+	tablebody.appendChild(newRow);
 
 	
 };
