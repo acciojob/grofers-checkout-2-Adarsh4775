@@ -1,8 +1,8 @@
 function totalPrice(){
 const prices = document.querySelectorAll(".price");
-
+let priceTotal = 0;
 prices.forEach((price)=>{
-	const priceTotal = priceTotal + parseInt(price.innerText);
+	 priceTotal = priceTotal + parseInt(price.innerText);
 });
 
 
@@ -19,5 +19,6 @@ const newCell = document.createElement("td");
 	
 };
 
+totalPrice();
 
 
